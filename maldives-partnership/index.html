@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The London Extrovert · Maldives Partnership</title>
+<meta name="description" content="Muhammad Ishaq, The London Extrovert. A London travel creator with 13M reel views in 90 days, proposing a creator-led resort partnership in the Maldives this January.">
+<meta name="theme-color" content="#0D262E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The London Extrovert × Your Maldives Resort">
+<meta property="og:description" content="13M reel views in 90 days. 250K saves. A creator-led resort story for the January travel window.">
+<meta property="og:image" content="https://thelondonextrovert.com/maldives-partnership/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Hanken+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* ── The London Extrovert · brand tokens ── */
+  --ink:#0D262E;        /* Thames Ink — primary dark */
+  --ink-2:#163A45;      /* Deep Thames — raised surfaces */
+  --stone:#F4EEE4;      /* Portland Stone — primary light */
+  --paper:#FBF8F2;      /* Paper — lightest */
+  --lagoon:#56BDB3;     /* Lagoon — travel / Maldives accent */
+  --red:#E2483A;        /* Postbox Red — signature "extrovert" accent */
+  --sand:#D8C3A0;       /* Sand — warm secondary */
+  --muted:#5E7378;      /* Slate — secondary text on light */
+  --mist:#A9BCBF;       /* Mist — secondary text on dark */
+  --line:rgba(13,38,46,.12);
+  --line-d:rgba(244,238,228,.14);
+  --serif:'Fraunces', Georgia, serif;
+  --sans:'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --mono:'DM Mono', ui-monospace, monospace;
+  --g:clamp(16px, 4vw, 48px);
+  --max:1180px;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--g)}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.serif{font-family:var(--serif);font-variation-settings:"SOFT" 50}
+.dot{color:var(--red)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.02;letter-spacing:-.02em;font-variation-settings:"SOFT" 40,"opsz" 144}
+h2{font-size:clamp(38px,7vw,76px)}
+h2 em,h1 em{font-style:italic;font-variation-settings:"SOFT" 100,"opsz" 144}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:20px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red)}
+section{position:relative}
+.pad{padding:clamp(80px,12vw,150px) 0}
+.wrap.pad{padding-left:var(--g);padding-right:var(--g)}
+.dark{background:var(--ink);color:var(--stone)}
+.dark .muted{color:var(--mist)}
+.muted{color:var(--muted)}
+.lead{font-size:clamp(18px,2.1vw,22px);line-height:1.5;max-width:40ch}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+
+/* ── nav ── */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px var(--g);transition:background .4s,backdrop-filter .4s;color:var(--stone)}
+.nav.solid{background:rgba(13,38,46,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.wm{font-family:var(--serif);font-size:19px;text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
+.wm i{font-variation-settings:"SOFT" 100}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .25s,background .25s,color .25s;cursor:pointer;border:0}
+.btn:hover{transform:translateY(-2px)}
+.btn-red{background:var(--red);color:#fff}
+.btn-ghost{border:1px solid currentColor;background:transparent}
+.nav .btn{min-height:40px;padding:0 16px;font-size:14px}
+
+/* ── hero ── */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:var(--stone);overflow:hidden;background:var(--ink)}
+.hero-bg{position:absolute;inset:0;background:url(/maldives-partnership/img/hero.webp) center 35%/cover no-repeat;transform:scale(1.08);animation:drift 18s ease-out forwards}
+@keyframes drift{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,38,46,.35) 0%,rgba(13,38,46,0) 30%,rgba(13,38,46,.55) 62%,rgba(13,38,46,.97) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-bottom:clamp(36px,6vw,72px);display:grid;gap:36px}
+.for{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:1px solid var(--line-d);border-radius:999px;background:rgba(13,38,46,.4);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);width:max-content;max-width:100%}
+.for b{font-weight:500;color:#fff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hero h1{font-size:clamp(64px,15vw,190px);line-height:.88;letter-spacing:-.035em}
+.hero h1 .s{display:block;font-size:.34em;letter-spacing:-.01em;margin-bottom:.15em;font-style:italic;color:var(--sand)}
+.hero p{max-width:34ch;font-size:clamp(17px,2vw,20px);color:rgba(244,238,228,.86)}
+.hero-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px}
+
+/* boarding pass */
+.pass{display:grid;grid-template-columns:1fr auto;background:var(--stone);color:var(--ink);border-radius:16px;width:min(100%,420px);position:relative;box-shadow:0 30px 60px -20px rgba(0,0,0,.5)}
+.pass-main{padding:18px 20px}
+.pass-stub{padding:18px 16px;border-left:2px dashed rgba(13,38,46,.25);display:flex;flex-direction:column;justify-content:space-between;align-items:center;min-width:92px}
+.pass::before,.pass::after{content:"";position:absolute;right:83px;width:18px;height:18px;border-radius:50%;background:var(--ink)}
+.pass::before{top:-9px}.pass::after{bottom:-9px}
+.route{display:flex;align-items:center;gap:12px;margin:8px 0 14px}
+.route b{font-family:var(--serif);font-size:38px;font-weight:500;letter-spacing:-.02em;line-height:1}
+.route .ln{flex:1;height:1px;background:rgba(13,38,46,.3);position:relative}
+.route .ln::after{content:"✈";position:absolute;left:50%;top:50%;transform:translate(-50%,-55%);font-size:15px;background:var(--stone);padding:0 6px;color:var(--red)}
+.pass dl{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}
+.pass dt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.pass dd{font-weight:600;font-size:14px}
+.stub-code{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--serif);font-size:24px;font-style:italic}
+.bars{display:flex;gap:2px;height:26px;align-items:stretch}
+.bars i{display:block;background:var(--ink);width:2px}.bars i:nth-child(3n){width:1px}.bars i:nth-child(4n){width:3px}
+
+/* ── marquee ── */
+.marquee{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;padding:14px 0;font-family:var(--serif);font-size:clamp(20px,3vw,28px);font-style:italic}
+.marquee div{display:inline-block;animation:mq 38s linear infinite;padding-left:0}
+.marquee span{margin:0 22px}.marquee span.sep{font-style:normal;opacity:.7}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ── hello ── */
+.hello-grid{display:grid;gap:56px}
+.hello h2{margin-bottom:28px}
+.polas{position:relative;height:clamp(380px,62vw,560px)}
+.pola{position:absolute;background:#fff;padding:8px 8px 30px;box-shadow:0 18px 40px -16px rgba(13,38,46,.35);border-radius:4px;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.pola img{width:100%;height:100%;object-fit:cover;border-radius:2px}
+.pola figcaption{position:absolute;left:10px;bottom:7px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pola:hover{transform:rotate(0) scale(1.04)!important;z-index:5}
+.p1{width:40%;height:62%;left:0;top:4%;transform:rotate(-5deg)}
+.p2{width:38%;height:50%;left:31%;top:0;transform:rotate(3deg);z-index:2}
+.p3{width:38%;height:56%;right:0;top:12%;transform:rotate(-2deg)}
+.p4{width:36%;height:44%;left:10%;bottom:0;transform:rotate(4deg);z-index:3}
+.p5{width:34%;height:42%;right:12%;bottom:2%;transform:rotate(-4deg);z-index:3}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border:1px solid var(--line);border-radius:999px;font-size:14px;font-weight:500;text-decoration:none;background:var(--paper)}
+.chip svg{width:16px;height:16px}
+a.chip:hover{border-color:var(--ink)}
+
+/* ── numbers ── */
+.big{font-family:var(--serif);font-size:clamp(110px,26vw,300px);line-height:.85;letter-spacing:-.05em;font-variation-settings:"SOFT" 30,"opsz" 144;color:var(--stone)}
+.big-row{display:grid;gap:22px;align-items:end;margin:30px 0 60px}
+.big-cap{max-width:30ch;font-size:19px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line-d)}
+.stat{padding:26px 0 26px;border-bottom:1px solid var(--line-d)}
+.stat:nth-child(odd){padding-right:16px;border-right:1px solid var(--line-d)}
+.stat:nth-child(even){padding-left:18px}
+.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(40px,7vw,64px);line-height:1;letter-spacing:-.03em}
+.stat span{display:block;margin-top:8px;color:var(--mist);font-size:15px}
+.stat.hl b{color:var(--lagoon)}
+.quote{margin-top:64px;display:grid;gap:18px;padding:30px;border-radius:var(--r);background:var(--ink-2)}
+.quote p{font-family:var(--serif);font-size:clamp(24px,3.6vw,38px);line-height:1.15;letter-spacing:-.01em}
+.quote p em{color:var(--lagoon)}
+
+/* ── audience ── */
+.aud-grid{display:grid;gap:24px;margin-top:48px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(22px,3vw,32px)}
+.card h3{font-size:26px;margin-bottom:6px}
+.bar{display:grid;grid-template-columns:1fr auto;gap:6px 12px;margin-top:16px;font-size:15px}
+.bar .track{grid-column:1/-1;height:8px;background:var(--stone);border-radius:9px;overflow:hidden}
+.bar .fill{height:100%;width:0;background:var(--ink);border-radius:9px;transition:width 1.4s cubic-bezier(.2,.7,.2,1)}
+.bar.hot .fill{background:var(--red)}
+.bar b{font-family:var(--mono);font-weight:500;font-size:13px}
+.ring-wrap{display:flex;align-items:center;gap:24px;margin-top:18px}
+.ring{width:132px;height:132px;flex:none}
+.ring circle{fill:none;stroke-width:12}
+.ring .bg{stroke:var(--stone)}
+.ring .fg{stroke:var(--red);stroke-linecap:round;stroke-dasharray:0 999;transition:stroke-dasharray 1.6s cubic-bezier(.2,.7,.2,1);transform:rotate(-90deg);transform-origin:50% 50%}
+.ring text{font-family:var(--serif);font-size:30px;fill:var(--ink);text-anchor:middle}
+.kpi{font-family:var(--serif);font-size:clamp(54px,8vw,84px);line-height:1;letter-spacing:-.03em}
+.kpi small{font-size:.4em;letter-spacing:0}
+
+/* ── reels ── */
+.phones{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px var(--g) 30px;margin:44px calc(var(--g)*-1) 0;scrollbar-width:none}
+.phones::-webkit-scrollbar{display:none}
+.phone{flex:0 0 min(68vw,300px);scroll-snap-align:center;text-decoration:none;display:block}
+.screen{aspect-ratio:9/17;border-radius:34px;border:7px solid #0a0a0a;background:#0a0a0a;overflow:hidden;position:relative;box-shadow:0 30px 50px -24px rgba(13,38,46,.55);transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.phone:hover .screen{transform:translateY(-8px) rotate(-1deg)}
+.screen img{width:100%;height:100%;object-fit:cover}
+.screen::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:34%;height:18px;background:#0a0a0a;border-radius:20px;z-index:2}
+.play{position:absolute;inset:auto 14px 14px auto;width:46px;height:46px;border-radius:50%;background:var(--red);display:grid;place-items:center;z-index:2}
+.play::after{content:"";border-left:13px solid #fff;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:4px}
+.views{display:flex;justify-content:space-between;align-items:baseline;margin-top:16px}
+.views b{font-family:var(--serif);font-size:44px;font-weight:400;letter-spacing:-.03em;line-height:1}
+.views span{font-size:14px;color:var(--muted)}
+.feed{margin-top:56px;display:grid;gap:18px}
+.thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.thumbs img{aspect-ratio:9/16;object-fit:cover;border-radius:10px;width:100%}
+
+/* ── britain ── */
+.tabs{display:flex;gap:8px;margin:40px 0 28px;flex-wrap:wrap}
+.tab{font:600 15px var(--sans);padding:12px 20px;border-radius:999px;border:1px solid var(--line-d);background:transparent;color:var(--stone);cursor:pointer;min-height:46px;transition:background .25s,color .25s}
+.tab[aria-selected=true]{background:var(--stone);color:var(--ink)}
+.tab:focus-visible,.btn:focus-visible,a:focus-visible{outline:2px solid var(--lagoon);outline-offset:3px}
+.panel{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(8px,1.6vw,20px)}
+.panel[hidden]{display:none}
+.reel{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:9/15;display:block}
+.reel img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.reel:hover img{transform:scale(1.06)}
+.reel::after{content:"Watch ↗";position:absolute;left:10px;bottom:10px;font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;background:rgba(13,38,46,.75);color:#fff;padding:6px 9px;border-radius:999px}
+.panel.show .reel{animation:pop .6s cubic-bezier(.2,.7,.2,1) both}
+.panel.show .reel:nth-child(2){animation-delay:.07s}.panel.show .reel:nth-child(3){animation-delay:.14s}
+@keyframes pop{from{opacity:0;transform:translateY(16px)}}
+
+/* ── stories ── */
+.story{display:grid;gap:28px;padding:clamp(40px,6vw,64px) 0;border-top:1px solid var(--line)}
+.story:first-of-type{border-top:0}
+.story h3{font-size:clamp(30px,4.6vw,50px)}
+.tag{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:6px;background:var(--stone);margin-bottom:14px}
+.story p{max-width:56ch;margin-top:14px}
+.story p a{text-decoration-color:var(--red);text-underline-offset:3px;text-decoration-thickness:1.5px}
+.mosaic{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:12px;aspect-ratio:3/4}
+.mosaic .wide{grid-column:span 2;aspect-ratio:auto}
+.stays{display:grid;grid-template-columns:1fr;gap:0;margin-top:22px;border-top:1px solid var(--line)}
+.stays a{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.stays b{font-family:var(--serif);font-weight:500;font-size:21px}
+.stays small{grid-column:1;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.stays i{grid-row:1/3;grid-column:2;align-self:center;font-style:normal;transition:transform .25s}
+.stays a:hover i{transform:translate(3px,-3px);color:var(--red)}
+.hl-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+
+/* ── maldives ── */
+.mv{background:var(--ink);color:var(--stone);overflow:hidden}
+.mv-hero{position:relative;min-height:min(92svh,820px);display:flex;align-items:flex-end}
+.mv-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.mv-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,38,46,.1) 30%,rgba(13,38,46,.92) 100%)}
+.mv-hero .wrap{position:relative;z-index:2;padding-bottom:60px;width:100%}
+.mv-hero h2{font-size:clamp(48px,10vw,128px);max-width:11ch}
+.steps{display:grid;gap:0;margin-top:20px}
+.step{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:30px 0;border-bottom:1px solid var(--line-d)}
+.step .n{font-family:var(--serif);font-style:italic;font-size:40px;line-height:1;color:var(--lagoon)}
+.step h3{font-size:clamp(26px,3.4vw,36px);margin-bottom:8px}
+.arc{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:44px calc(var(--g)*-1) 0;padding:0 var(--g) 10px;scrollbar-width:none}
+.arc::-webkit-scrollbar{display:none}
+.beat{flex:0 0 200px;scroll-snap-align:start;padding:20px;border-radius:16px;background:var(--ink-2);border:1px solid var(--line-d)}
+.beat .mono{color:var(--lagoon)}
+.beat b{display:block;font-family:var(--serif);font-weight:400;font-size:24px;margin:10px 0 6px;line-height:1.1}
+.beat p{font-size:14.5px;color:var(--mist)}
+.deliv{display:grid;gap:16px;margin-top:56px}
+.dcard{border-radius:var(--r);padding:28px;background:var(--stone);color:var(--ink)}
+.dcard.alt{background:var(--lagoon)}
+.dcard h3{font-size:34px;margin-bottom:16px}
+.dcard ul{list-style:none;display:grid;gap:0}
+.dcard li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid rgba(13,38,46,.15);font-weight:500}
+.dcard li span{font-family:var(--mono);font-size:13px;white-space:nowrap}
+.note{margin-top:22px;font-size:15px;color:var(--mist);max-width:60ch}
+.window .sx{display:none}
+.window{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:40px;padding:18px 22px;border-radius:14px;background:var(--sand);color:var(--ink)}
+
+/* ── contact ── */
+.cta{position:relative;color:var(--stone);background:var(--ink);overflow:hidden}
+.cta-bg{position:absolute;inset:0;background:url(/maldives-partnership/img/contact.webp) center 20%/cover no-repeat;opacity:.9}
+.cta::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,38,46,.05) 0%,rgba(13,38,46,.35) 35%,rgba(13,38,46,.96) 72%)}
+.cta .wrap{position:relative;z-index:2;padding-top:clamp(200px,40vw,380px);padding-bottom:clamp(60px,8vw,100px)}
+.cta h2{font-size:clamp(52px,11vw,140px);max-width:10ch}
+.links{display:grid;gap:12px;margin-top:40px;max-width:560px}
+.links a{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 22px;border-radius:16px;background:rgba(244,238,228,.08);border:1px solid var(--line-d);text-decoration:none;transition:background .25s,transform .25s;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.links a:hover{background:rgba(244,238,228,.16);transform:translateX(4px)}
+.links a.primary{background:var(--red);border-color:var(--red)}
+.links small{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+.links b{font-weight:600;font-size:17px;word-break:break-word}
+footer{background:var(--ink);color:var(--mist);border-top:1px solid var(--line-d);padding:28px 0 calc(28px + env(safe-area-inset-bottom));font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+/* ── desktop ── */
+@media (min-width:860px){
+  body{font-size:18px}
+  .hello-grid{grid-template-columns:1fr 1.05fr;align-items:center}
+  .big-row{grid-template-columns:auto 1fr;gap:40px}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .stat,.stat:nth-child(odd),.stat:nth-child(even){padding:30px 20px;border-right:1px solid var(--line-d)}
+  .stat:nth-child(4n){border-right:0}
+  .quote{grid-template-columns:1fr 1fr;align-items:end;padding:44px}
+  .aud-grid{grid-template-columns:1.1fr 1fr 1fr}
+  .phones{overflow:visible;margin:56px 0 0;padding:10px 0 30px;justify-content:space-between}
+  .phone{flex:0 0 30%}
+  .phone:nth-child(2){transform:translateY(40px)}
+  .feed{grid-template-columns:240px 1fr;align-items:center;margin-top:90px}
+  .story{grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+  .story.flip > :first-child{order:2}
+  .stays{grid-template-columns:1fr 1fr;column-gap:40px}
+  .mv-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+  .steps{margin-top:0}
+  .arc{overflow:visible;margin:60px 0 0;padding:0}
+  .beat{flex:1}
+  .deliv{grid-template-columns:1fr 1fr}
+  .window .sx{display:inline}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a class="wm" href="#top">The London <i>Extrovert</i><span class="dot">.</span></a>
+  <a class="btn btn-red" href="#contact">Let’s talk</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-bg" role="img" aria-label="St Paul’s Cathedral at dusk"></div>
+  <div class="wrap">
+    <div class="for mono rv">Prepared for <b>your resort</b></div>
+    <h1 class="rv d1"><span class="s">The London</span>Extrovert<span class="dot">.</span></h1>
+    <div class="hero-row">
+      <p class="rv d2">Travel creator specialising in destination, hospitality and resort storytelling. This page is my invitation to tell <em>your</em> story next.</p>
+      <div class="pass rv d3" aria-label="Boarding pass: London to Malé, January travel window">
+        <div class="pass-main">
+          <span class="mono muted">Boarding pass · Creator partnership</span>
+          <div class="route"><b>LON</b><span class="ln"></span><b>MLE</b></div>
+          <dl>
+            <div><dt>Passenger</dt><dd>Muhammad Ishaq</dd></div>
+            <div><dt>Travel window</dt><dd>January 2027</dd></div>
+            <div><dt>Destination</dt><dd>Your resort</dd></div>
+            <div><dt>Arriving in</dt><dd>91K feeds</dd></div>
+          </dl>
+        </div>
+        <div class="pass-stub">
+          <span class="stub-code">Hello<span class="dot">.</span></span>
+          <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div>
+  <span>13M reel views</span><span class="sep">✦</span><span>250K saves</span><span class="sep">✦</span><span>195K shares</span><span class="sep">✦</span><span>91K followers</span><span class="sep">✦</span><span>4.5% engagement</span><span class="sep">✦</span><span>London · UK · Europe · US</span><span class="sep">✦</span>
+  <span>13M reel views</span><span class="sep">✦</span><span>250K saves</span><span class="sep">✦</span><span>195K shares</span><span class="sep">✦</span><span>91K followers</span><span class="sep">✦</span><span>4.5% engagement</span><span class="sep">✦</span><span>London · UK · Europe · US</span><span class="sep">✦</span>
+</div></div>
+
+<!-- HELLO -->
+<section class="hello pad">
+  <div class="wrap hello-grid">
+    <div>
+      <span class="eyebrow mono rv">Hello, I’m Ishaq</span>
+      <h2 class="rv d1">A London storyteller with a <em>passport</em> habit.</h2>
+      <p class="lead rv d2">I share destination experiences, hospitality, food and everyday adventures with audiences across the <strong>UK, Europe and the US</strong>.</p>
+      <p class="rv d2 muted" style="margin-top:16px;max-width:46ch">I create personality-led short-form video, photography and UGC for hotels, tourism organisations, travel brands and lifestyle businesses.</p>
+      <div class="facts rv d3">
+        <a class="chip" href="https://www.instagram.com/thelondonextrovert/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@thelondonextrovert</a>
+        <span class="chip">📍 London-based</span>
+        <span class="chip">Video · Photo · UGC</span>
+      </div>
+    </div>
+    <div class="polas rv d2" aria-label="Photos of Ishaq travelling">
+      <figure class="pola p1"><img src="/maldives-partnership/img/piccadilly.webp" alt="Ishaq at Piccadilly Circus" loading="lazy"><figcaption>London</figcaption></figure>
+      <figure class="pola p2"><img src="/maldives-partnership/img/podcast.webp" alt="Ishaq on a podcast set" loading="lazy"><figcaption>On camera</figcaption></figure>
+      <figure class="pola p3"><img src="/maldives-partnership/img/manor.webp" alt="Ishaq outside a country manor hotel" loading="lazy"><figcaption>Country stays</figcaption></figure>
+      <figure class="pola p4"><img src="/maldives-partnership/img/coast.webp" alt="Ishaq on a coastal path" loading="lazy"><figcaption>Coastlines</figcaption></figure>
+      <figure class="pola p5"><img src="/maldives-partnership/img/punting.webp" alt="Ishaq punting on a river" loading="lazy"><figcaption>Slow days</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="dark pad" id="numbers">
+  <div class="wrap">
+    <span class="eyebrow mono rv">Last 90 days · 21 Jul – 19 Oct 2026</span>
+    <div class="big-row">
+      <div class="big rv" aria-label="13 million"><span data-count="13" data-suffix="M">13M</span></div>
+      <p class="big-cap rv d1">reel views in ninety days, from <strong>3.7M unique viewers</strong>. A travel audience that’s already planning its next experience.</p>
+    </div>
+    <div class="stats">
+      <div class="stat rv"><b data-count="5.1" data-suffix="M" data-dec="1">5.1M</b><span>Reel views, last 30 days</span></div>
+      <div class="stat hl rv d1"><b data-count="250" data-suffix="K">250K</b><span>Saves</span></div>
+      <div class="stat hl rv d2"><b data-count="195" data-suffix="K">195K</b><span>Shares</span></div>
+      <div class="stat rv d3"><b data-count="102" data-suffix="K">102K</b><span>Likes</span></div>
+      <div class="stat rv"><b data-count="91" data-suffix="K">91K</b><span>Followers</span></div>
+      <div class="stat rv d1"><b data-count="4.5" data-suffix="%" data-dec="1">4.5%</b><span>Engagement rate</span></div>
+      <div class="stat rv d2"><b data-count="118">118</b><span>Reels published</span></div>
+      <div class="stat rv d3"><b data-count="3.1" data-suffix="K" data-dec="1">3.1K</b><span>Reposts</span></div>
+    </div>
+    <div class="quote rv">
+      <p>People don’t save a reel to admire it. <em>They save it to book it.</em></p>
+      <span class="muted">250,000 saves and 195,000 shares in 90 days: my audience treats my content as a travel planner, and sends it to the people they travel with.</span>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIENCE -->
+<section class="pad" id="audience" style="background:var(--stone)">
+  <div class="wrap">
+    <span class="eyebrow mono rv">Who’s watching</span>
+    <h2 class="rv d1">An audience in its <em>booking years.</em></h2>
+    <div class="aud-grid">
+      <div class="card rv">
+        <span class="mono muted">Top countries</span>
+        <div class="bar hot"><span>United Kingdom</span><b>48.4%</b><div class="track"><div class="fill" data-w="48.4"></div></div></div>
+        <div class="bar"><span>United States</span><b>7.2%</b><div class="track"><div class="fill" data-w="7.2"></div></div></div>
+        <div class="bar"><span>India</span><b>6.2%</b><div class="track"><div class="fill" data-w="6.2"></div></div></div>
+        <div class="bar"><span>Germany</span><b>3.5%</b><div class="track"><div class="fill" data-w="3.5"></div></div></div>
+        <div class="bar"><span>Italy</span><b>3.1%</b><div class="track"><div class="fill" data-w="3.1"></div></div></div>
+        <p class="muted" style="margin-top:18px;font-size:15px"><strong style="color:var(--ink)">41.5%</strong> of followers are in London itself.</p>
+      </div>
+      <div class="card rv d1">
+        <span class="mono muted">Age</span>
+        <div class="kpi" style="margin-top:10px">71<small>%</small></div>
+        <p class="muted" style="font-size:15px">are aged 25–54</p>
+        <div class="bar"><span>25–34</span><b>20.4%</b><div class="track"><div class="fill" data-w="20.4"></div></div></div>
+        <div class="bar hot"><span>35–44</span><b>25.5%</b><div class="track"><div class="fill" data-w="25.5"></div></div></div>
+        <div class="bar hot"><span>45–54</span><b>25.1%</b><div class="track"><div class="fill" data-w="25.1"></div></div></div>
+        <div class="bar"><span>55–64</span><b>16.8%</b><div class="track"><div class="fill" data-w="16.8"></div></div></div>
+      </div>
+      <div class="card rv d2">
+        <span class="mono muted">Gender</span>
+        <div class="ring-wrap">
+          <svg class="ring" viewBox="0 0 132 132" aria-label="67.3% women"><circle class="bg" cx="66" cy="66" r="54"/><circle class="fg" id="ring" cx="66" cy="66" r="54" data-p="67.3"/><text x="66" y="76">67%</text></svg>
+          <div><strong style="font-size:20px">67.3% women</strong><p class="muted" style="font-size:15px">32.7% men</p></div>
+        </div>
+        <p class="muted" style="margin-top:22px;font-size:15px">A majority-women audience that saves and shares travel ideas with the people they travel with.</p>
+        <p class="mono muted" style="margin-top:18px;font-size:10.5px">Source: Instagram insights, 91,102 followers</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOP REELS -->
+<section class="pad" id="reels">
+  <div class="wrap">
+    <span class="eyebrow mono rv">Reels that travelled</span>
+    <h2 class="rv d1">Millions of views, <em>one city at a time.</em></h2>
+    <div class="phones">
+      <a class="phone rv" href="https://www.instagram.com/p/DNp-FJvi3bp/" target="_blank" rel="noopener">
+        <div class="screen"><img src="/maldives-partnership/img/top1.webp" alt="Reel: 14 free places in London you must visit" loading="lazy"><span class="play"></span></div>
+        <div class="views"><b>1.3M</b><span>views · Free London</span></div>
+      </a>
+      <a class="phone rv d1" href="https://www.instagram.com/p/DMp9HfuILse/" target="_blank" rel="noopener">
+        <div class="screen"><img src="/maldives-partnership/img/top2.webp" alt="Reel: They say London is expensive" loading="lazy"><span class="play"></span></div>
+        <div class="views"><b>1.5M</b><span>views · London on a budget</span></div>
+      </a>
+      <a class="phone rv d2" href="https://www.instagram.com/reel/DaDDNt1icff/" target="_blank" rel="noopener">
+        <div class="screen"><img src="/maldives-partnership/img/top3.webp" alt="Reel: Tubes in summer" loading="lazy"><span class="play"></span></div>
+        <div class="views"><b>5.4M</b><span>views · Tubes in summer</span></div>
+      </a>
+    </div>
+    <div class="feed rv">
+      <div><span class="mono muted">Fresh on the feed</span><p style="margin-top:6px">118 reels in 90 days. Consistent, timely and built to be saved.</p></div>
+      <div class="thumbs">
+        <img src="/maldives-partnership/img/new1.webp" alt="Reel: London NYE fireworks tickets" loading="lazy">
+        <img src="/maldives-partnership/img/new2.webp" alt="Reel: London immersive experience" loading="lazy">
+        <img src="/maldives-partnership/img/new3.webp" alt="Reel: UK clocks change" loading="lazy">
+        <img src="/maldives-partnership/img/new4.webp" alt="Reel: UK immigration update" loading="lazy">
+        <img src="/maldives-partnership/img/new5.webp" alt="Reel: 13 free places in London" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRITAIN -->
+<section class="dark pad" id="britain">
+  <div class="wrap">
+    <span class="eyebrow mono rv">Destination storytelling</span>
+    <h2 class="rv d1">Uncovering the magic of <em>England, Wales &amp; Scotland.</em></h2>
+    <p class="lead muted rv d2" style="margin-top:22px">Hidden gems, local tips and the moments that make a place worth visiting, shared with a growing travel community. Tap any reel to watch it on Instagram.</p>
+    <div class="tabs" role="tablist" aria-label="Country">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="t-eng" id="b-eng">England</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="t-wal" id="b-wal">Wales</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="t-sco" id="b-sco">Scotland</button>
+    </div>
+    <div class="panel show" role="tabpanel" id="t-eng" aria-labelledby="b-eng">
+      <a class="reel" href="https://www.instagram.com/reel/DN-muApApaJ/" target="_blank" rel="noopener"><img src="/maldives-partnership/img/eng1.webp" alt="Isle of Wight reel" loading="lazy"></a>
+      <a class="reel" href="https://www.instagram.com/reel/DMDNBEto7Wz/" target="_blank" rel="noopener"><img src="/maldives-partnership/img/eng2.webp" alt="Cornwall trip reel" loading="lazy"></a>
+      <a class="reel" href="https://www.instagram.com/reel/DKuc2ZUoSs_/" target="_blank" rel="noopener"><img src="/maldives-partnership/img/eng3.webp" alt="Cornwall coast walk reel" loading="lazy"></a>
+    </div>
+    <div class="panel" role="tabpanel" id="t-wal" aria-labelledby="b-wal" hidden>
+      <a class="reel" href="https://www.instagram.com/reel/DLh3nL3IkrY/" target="_blank" rel="noopener"><img src="/maldives-partnership/img/wal1.webp" alt="South Wales places reel" loading="lazy"></a>
+      <a class="reel" href="https://www.instagram.com/reel/DM74C9AoCTP/" target="_blank" rel="noopener"><img src="/maldives-partnership/img/wal2.webp" alt="North Wales trip reel" loading="lazy"></a>
+      <a class="reel" href="https://www.instagram.com/reel/DNYLbIjIUBT/" target="_blank" rel="noopener"><img src="/maldives-partnership/img/wal3.webp" alt="Explore the UK reel" loading="lazy"></a>
+    </div>
+    <div class="panel" role="tabpanel" id="t-sco" aria-labelledby="b-sco" hidden>
+      <a class="reel" href="https://www.instagram.com/reel/DOJPQfTgovw/" target="_blank" rel="noopener"><img src="/maldives-partnership/img/sco1.webp" alt="Glenfinnan Viaduct reel" loading="lazy"></a>
+      <a class="reel" href="https://www.instagram.com/reel/DN0iDHfRCSA/" target="_blank" rel="noopener"><img src="/maldives-partnership/img/sco2.webp" alt="Scotland with strangers reel" loading="lazy"></a>
+      <a class="reel" href="https://www.instagram.com/reel/DMlgdRHIP-_/" target="_blank" rel="noopener"><img src="/maldives-partnership/img/sco3.webp" alt="Edinburgh reel" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<!-- STORIES -->
+<section class="pad" id="partners">
+  <div class="wrap">
+    <span class="eyebrow mono rv">Partnerships that turn places into stories</span>
+    <h2 class="rv d1">Destination stories <em>with purpose.</em></h2>
+
+    <article class="story">
+      <div class="rv">
+        <span class="tag">Press invitation · VisitBristol</span>
+        <h3>Bristol Balloon Fiesta 2026</h3>
+        <p>Selected as one of <strong>4 press-invited creators</strong> in the UK through a collaboration involving <a href="https://www.instagram.com/visitbristol/" target="_blank" rel="noopener">VisitBristol</a> and <a href="https://www.instagram.com/gwruk/" target="_blank" rel="noopener">Great Western Railway</a>. Two nights at <a href="https://www.instagram.com/leonardohotels/" target="_blank" rel="noopener">Leonardo Hotel Bristol</a>, a <a href="https://www.instagram.com/p/DbyiFDcCp9O/" target="_blank" rel="noopener">hot-air balloon flight</a>, city attractions and the BBC Proms, told through culture, entertainment and the ease of travelling by train.</p>
+      </div>
+      <div class="mosaic rv d1">
+        <img src="/maldives-partnership/img/bristol1.webp" alt="Ishaq on a GWR train" loading="lazy">
+        <img src="/maldives-partnership/img/bristol2.webp" alt="Ishaq at the Balloon Fiesta" loading="lazy">
+        <img src="/maldives-partnership/img/bristol3.webp" alt="Hot-air balloon over Bristol" loading="lazy">
+      </div>
+    </article>
+
+    <article class="story flip">
+      <div class="rv">
+        <span class="tag">Ambassador · Luxury mountain resorts</span>
+        <h3>GreenPak Tourism Pakistan</h3>
+        <p>I travelled with my parents to highlight <a href="https://www.instagram.com/p/DdEa4WTiB4N/" target="_blank" rel="noopener">intergenerational travel</a> and the bond between father and son, showcasing two high-standard mountain resorts and Pakistan’s natural beauty.</p>
+        <p class="muted">Invited to their head office in Islamabad to discuss how creators can connect audiences in the UK, US and Europe with Pakistan’s nature, culture, heritage and faith tourism.</p>
+      </div>
+      <div class="mosaic rv d1">
+        <img class="wide" src="/maldives-partnership/img/gp1.webp" alt="Ishaq and his father on a podcast set" loading="lazy">
+        <img src="/maldives-partnership/img/gp3.webp" alt="Resort bedroom" loading="lazy">
+        <img src="/maldives-partnership/img/gp2.webp" alt="Team photo at Green Tourism Pakistan" loading="lazy">
+        <img src="/maldives-partnership/img/gp4.webp" alt="Mountain resort room with stone wall" loading="lazy">
+        <img src="/maldives-partnership/img/skardu.webp" alt="8 must-visit places in Skardu" loading="lazy">
+      </div>
+    </article>
+
+    <article class="story">
+      <div class="rv">
+        <span class="tag">Fully funded · Featured destination</span>
+        <h3>Skardu × <a href="https://www.instagram.com/reel/DZP6eGqivFn/" target="_blank" rel="noopener" style="text-decoration:none">Guman Resort</a></h3>
+        <p>A fully funded <a href="https://www.instagram.com/reel/DYuJnFGieCA/" target="_blank" rel="noopener">tourism trip</a> exploring Skardu’s mountains, culture and hospitality: <a href="https://www.instagram.com/reel/DZr651FCGTb/" target="_blank" rel="noopener">destination-led content</a> on nature, adventure and cultural discovery, anchored by the comfort of a high-quality resort stay.</p>
+        <p class="mono muted" style="font-size:11px">Mountain tourism · Resort coverage · Destination reels · Cultural storytelling</p>
+      </div>
+      <div class="rv d1">
+        <span class="mono muted">PR &amp; hosted experiences in the UK</span>
+        <div class="stays">
+          <a href="https://www.instagram.com/p/DYcarbvqV8c/" target="_blank" rel="noopener"><b>The Sunday Times</b><small>Editorial travel collaboration</small><i>↗</i></a>
+          <a href="https://www.instagram.com/p/DYzfDvrgjBU/" target="_blank" rel="noopener"><b>Tribe Canary Wharf</b><small>Hosted hospitality stay</small><i>↗</i></a>
+          <a href="https://www.instagram.com/p/DcrO5MOigIO/" target="_blank" rel="noopener"><b>Folk Co-Living</b><small>PR stay · Community living</small><i>↗</i></a>
+          <a href="https://www.instagram.com/p/DZITKXPqP6V/" target="_blank" rel="noopener"><b>Ark Living</b><small>Hosted accommodation</small><i>↗</i></a>
+        </div>
+        <div class="mosaic" style="grid-template-columns:repeat(4,1fr);margin-top:18px">
+          <img src="/maldives-partnership/img/stay1.webp" alt="Hotel room with pendant lamp" loading="lazy">
+          <img src="/maldives-partnership/img/stay2.webp" alt="Hotel lobby" loading="lazy">
+          <img src="/maldives-partnership/img/stay3.webp" alt="Apartment bedroom" loading="lazy">
+          <img src="/maldives-partnership/img/stay4.webp" alt="Rooftop pool with skyline view" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <div class="rv">
+      <span class="mono muted">Explore my highlights</span>
+      <div class="hl-row">
+        <a class="chip" href="https://www.instagram.com/stories/highlights/18063643745273143/" target="_blank" rel="noopener">PR Stays ↗</a>
+        <a class="chip" href="https://www.instagram.com/stories/highlights/18138531856587992/" target="_blank" rel="noopener">Press Trips ↗</a>
+        <a class="chip" href="https://www.instagram.com/stories/highlights/18609358135026853/" target="_blank" rel="noopener">Restaurants ↗</a>
+        <a class="chip" href="https://www.instagram.com/stories/highlights/18087099599400775/" target="_blank" rel="noopener">Uber ↗</a>
+        <a class="chip" href="https://www.instagram.com/stories/highlights/18081360677669942/" target="_blank" rel="noopener">Fever Ambassador ↗</a>
+        <a class="chip" href="https://www.instagram.com/stories/highlights/18179154325412898/" target="_blank" rel="noopener">Goodwood Festival of Speed ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MALDIVES -->
+<section class="mv" id="maldives">
+  <div class="mv-hero">
+    <img src="/maldives-partnership/img/maldives.webp" alt="Aerial view of Maldives atolls" loading="lazy">
+    <div class="wrap">
+      <span class="eyebrow mono rv">Maldives resort partnership</span>
+      <h2 class="rv d1">How I can bring <em>your resort</em> to life.</h2>
+    </div>
+  </div>
+  <div class="wrap pad" style="padding-top:clamp(50px,7vw,90px)">
+    <div class="mv-grid">
+      <div class="rv">
+        <p class="lead">Personality-led travel content that shows the full resort experience, from arrival and villa design to dining, wellness, activities and the details guests remember.</p>
+        <p class="muted" style="margin-top:16px">The goal: help potential guests imagine themselves there <em>before</em> they book.</p>
+      </div>
+      <div class="steps">
+        <div class="step rv"><span class="n">01</span><div><h3>Showcase arrival + stay</h3><p class="muted">Transfer, welcome, villa design, views, details and the first impression of the property.</p></div></div>
+        <div class="step rv d1"><span class="n">02</span><div><h3>Highlight experiences</h3><p class="muted">Dining, wellness, excursions, activities and the atmosphere that makes the resort distinctive.</p></div></div>
+        <div class="step rv d2"><span class="n">03</span><div><h3>Create guest inspiration</h3><p class="muted">Content that helps potential guests imagine the comfort, service and moments they could experience.</p></div></div>
+      </div>
+    </div>
+
+    <div class="arc rv" aria-label="The story arc">
+      <div class="beat"><span class="mono">Beat 01</span><b>The arrival</b><p>Seaplane or speedboat, first glimpse, the welcome.</p></div>
+      <div class="beat"><span class="mono">Beat 02</span><b>The villa reveal</b><p>Doors open, the view, the details that make it yours.</p></div>
+      <div class="beat"><span class="mono">Beat 03</span><b>A taste of place</b><p>Signature dining and the people behind it.</p></div>
+      <div class="beat"><span class="mono">Beat 04</span><b>Slow down</b><p>Spa, reef, sandbank: the experiences guests come for.</p></div>
+      <div class="beat"><span class="mono">Beat 05</span><b>Golden hour</b><p>The hero moment your audience saves and shares.</p></div>
+    </div>
+
+    <div class="deliv">
+      <div class="dcard rv">
+        <span class="mono muted">Possible deliverables</span>
+        <h3>Organic</h3>
+        <ul>
+          <li>Hero Reel <span>× 1</span></li>
+          <li>Experience Reel <span>× 1</span></li>
+          <li>Instagram Stories <span>8–12</span></li>
+          <li>Carousel or static post <span>× 1</span></li>
+        </ul>
+      </div>
+      <div class="dcard alt rv d1">
+        <span class="mono" style="opacity:.7">Possible deliverables</span>
+        <h3>UGC</h3>
+        <ul>
+          <li>Vertical videos <span>4–6</span></li>
+          <li>Edited photographs <span>15–25</span></li>
+          <li>Selected raw clips <span>✓</span></li>
+          <li>Captions + posting sequence <span>✓</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note rv">Usage, paid advertising, whitelisting and exclusivity can be discussed separately according to the resort’s needs.</p>
+    <div class="window mono rv"><span>January travel window</span><span class="sx">·</span><span>London-based creator</span><span class="sx">·</span><span>Resort-led destination storytelling</span></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="cta" id="contact">
+  <div class="cta-bg" role="img" aria-label="Ishaq on a waterfront"></div>
+  <div class="wrap">
+    <span class="eyebrow mono rv">Get in touch</span>
+    <h2 class="rv d1">Let’s create something <em>extraordinary.</em></h2>
+    <div class="links">
+      <a class="primary rv" id="mailLink" href="mailto:thelondonextrovert@gmail.com?subject=Maldives%20partnership"><div><small>Email</small><b>thelondonextrovert@gmail.com</b></div><span>→</span></a>
+      <a class="rv d1" href="https://wa.me/447423557657" target="_blank" rel="noopener"><div><small>WhatsApp / Phone</small><b>+44 7423 557657</b></div><span>→</span></a>
+      <a class="rv d2" href="https://www.instagram.com/thelondonextrovert/" target="_blank" rel="noopener"><div><small>Instagram</small><b>@thelondonextrovert</b></div><span>→</span></a>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span class="serif">The London <i>Extrovert</i><span class="dot">.</span></span><span>Muhammad Ishaq · London, UK</span></div></footer>
+
+<script>
+(function(){
+  // Nav background
+  var nav=document.getElementById('nav');
+  function onScroll(){ nav.classList.toggle('solid', window.scrollY>40); }
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function countUp(el){
+    var to=parseFloat(el.dataset.count), dec=+(el.dataset.dec||0), suf=el.dataset.suffix||'';
+    if(reduce){ el.textContent=to.toFixed(dec)+suf; return; }
+    var t0=null, dur=1600;
+    function step(t){ if(!t0)t0=t; var p=Math.min((t-t0)/dur,1); p=1-Math.pow(1-p,4);
+      el.textContent=(to*p).toFixed(dec)+suf; if(p<1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var el=e.target; el.classList.add('in');
+      el.querySelectorAll('[data-count]').forEach(countUp);
+      if(el.matches('[data-count]')) countUp(el);
+      el.querySelectorAll('.fill').forEach(function(f){ f.style.width=Math.min(100, f.dataset.w*1.6)+'%'; });
+      var r=el.querySelector('#ring'); if(r){ var c=2*Math.PI*54; r.style.strokeDasharray=(c*r.dataset.p/100)+' '+c; }
+      io.unobserve(el);
+    });
+  },{threshold:.18, rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+
+  // Tabs
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){ select(i); });
+    t.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ var n=(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length; select(n); tabs[n].focus(); }
+    });
+  });
+  function select(i){
+    tabs.forEach(function(t,j){
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      t.setAttribute('aria-selected', i===j); t.tabIndex = i===j?0:-1;
+      p.hidden = i!==j; p.classList.toggle('show', i===j);
+    });
+  }
+  select(0);
+})();
+</script>
+</body>
+</html>
