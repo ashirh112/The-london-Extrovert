@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The London Extrovert × Maldives | Host a Travel Creator</title>
-<meta name="description" content="Muhammad Ishaq, The London Extrovert. Travel reels watched by 3.7M people every 90 days, mostly in the UK and Europe. Invite him to your Maldives resort.">
-<meta property="og:title" content="Your island, seen by Europe. | The London Extrovert">
-<meta property="og:description" content="Travel creator Muhammad Ishaq. 13M reel views in 90 days. Invite him to your Maldives resort.">
+<title>The London Extrovert | Muhammad Ishaq, Travel Creator</title>
+<meta name="description" content="Muhammad Ishaq, The London Extrovert. Travel reels watched by 3.7M people every 90 days, mostly in the UK and Europe. Destination guides, hotel stays and brand campaigns for travellers across the UK, US and Europe.">
+<meta property="og:title" content="The London Extrovert | Travel creator Muhammad Ishaq">
+<meta property="og:description" content="Travel creator Muhammad Ishaq. 13M reel views in 90 days. Destination guides, hotel stays and brand campaigns.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://the-london-extrovert.vercel.app/">
 <meta property="og:image" content="https://the-london-extrovert.vercel.app/img/p-cliffs.webp">
@@ -83,7 +83,7 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform
 /* Hero */
 .hero{position:relative;padding-top:clamp(96px,11vw,132px);padding-bottom:clamp(40px,6vw,88px)}
 .hero-top{display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid var(--line);padding-bottom:14px}
-.route{display:flex;align-items:center;gap:10px}
+.route{display:flex;align-items:center;gap:10px;transition:color .3s}.route:hover{color:var(--coral)}
 .route i{position:relative;display:block;width:clamp(40px,7vw,110px);height:1px;background:var(--ink)}
 .route i::after{content:"";position:absolute;right:-1px;top:-3px;width:7px;height:7px;border-radius:50%;background:var(--coral);animation:blink 1.6s steps(1) infinite}
 @keyframes blink{50%{opacity:.15}}
@@ -119,7 +119,7 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform
 .src{margin-top:22px}
 
 /* Flight */
-.flight{position:relative;padding-block:clamp(64px,8vw,120px) 0}
+.flight{position:relative;padding-block:0}
 .flight svg{display:block;width:100%;height:auto;overflow:visible}
 .f-base{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-dasharray:2 8;stroke-linecap:round;opacity:.35}
 .f-draw{fill:none;stroke:var(--coral);stroke-width:2.5;stroke-linecap:round}
@@ -161,8 +161,20 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform
 .next .phone .btn{align-self:flex-start;height:46px;padding:0 18px}
 .swipe{display:none}
 
+/* Services */
+.svc{margin-top:clamp(36px,4vw,64px);border-bottom:1px solid var(--line)}
+.svc li{display:grid;grid-template-columns:48px minmax(0,6fr) minmax(0,4fr) minmax(0,2.6fr);gap:24px;align-items:baseline;padding-block:clamp(22px,2.6vw,38px);border-top:1px solid var(--line);transition:padding .5s var(--ease)}
+.svc b{font-family:var(--display);font-weight:800;font-stretch:68%;font-variation-settings:"wdth" 68;text-transform:uppercase;font-size:clamp(40px,5.4vw,96px);line-height:.9;letter-spacing:-.02em;transition:color .35s,transform .6s var(--ease)}
+.svc p{color:var(--mute);max-width:24em}
+.svc .tag{text-align:right;color:var(--reef)}
+.svc li:hover b{color:var(--coral);transform:translateX(10px)}
+
 /* Package / ticket */
-.pkg-head{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:24px}
+.now{display:flex;align-items:center;gap:10px;color:var(--coral);margin-bottom:22px}
+.now i{width:8px;height:8px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 0 rgba(255,85,51,.6);animation:pulse 1.8s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(255,85,51,0)}100%{box-shadow:0 0 0 0 rgba(255,85,51,0)}}
+.pkg-lead{margin-top:24px;max-width:30em;font-size:clamp(17px,1.4vw,21px)}
+.pkg-head{display:block}
 .ticket-wrap{perspective:1600px;margin-top:clamp(40px,5vw,72px)}
 .ticket{display:grid;grid-template-columns:minmax(0,1fr) clamp(220px,24%,320px);background:var(--paper);border-radius:26px;box-shadow:0 50px 90px -40px rgba(8,32,43,.4),0 0 0 1px var(--line);transform-style:preserve-3d;position:relative}
 .t-main{padding:clamp(22px,3vw,44px);min-width:0}
@@ -228,6 +240,7 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform
 .c-lead{max-width:30em;margin-top:24px;font-size:clamp(17px,1.4vw,21px);color:rgba(245,241,232,.86)}
 .c-mail{display:inline-block;margin-top:clamp(28px,4vw,48px);font-family:var(--display);font-weight:700;font-stretch:80%;font-variation-settings:"wdth" 80;font-size:clamp(22px,4.2vw,66px);line-height:1.05;border-bottom:2px solid rgba(245,241,232,.5);padding-bottom:6px;overflow-wrap:anywhere;transition:border-color .3s,color .3s}
 .c-mail:hover{border-color:var(--coral-hi);color:#fff}
+.c-mv{margin-top:28px}.c-mv a{border-bottom:1px solid rgba(245,241,232,.4);padding-bottom:3px;color:rgba(245,241,232,.85)}.c-mv a:hover{color:#fff;border-color:var(--coral-hi)}
 .c-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:clamp(56px,8vw,110px);padding-top:18px;border-top:1px solid rgba(245,241,232,.25);color:rgba(245,241,232,.7)}
 .foot a:hover{color:#fff}
@@ -279,7 +292,8 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform
   .swipe{display:flex;align-items:center;gap:10px;margin-top:22px;color:rgba(245,241,232,.6)}
   .swipe i{display:block;width:40px;height:1px;background:currentColor;position:relative}
   .swipe i::after{content:"";position:absolute;right:0;top:-3px;width:7px;height:7px;border-top:1px solid;border-right:1px solid;transform:rotate(45deg)}
-  .pkg-head{grid-template-columns:minmax(0,1fr)}
+  .svc li{grid-template-columns:minmax(0,1fr);gap:10px}
+  .svc .tag{text-align:left}
   .ticket{grid-template-columns:minmax(0,1fr)}
   .t-stub{border-left:0;border-top:2px dashed rgba(245,241,232,.3);border-radius:0 0 26px 26px;flex-direction:row;flex-wrap:wrap;align-items:flex-end}
   .t-stub::before,.t-stub::after{top:-17px;left:auto}
@@ -307,10 +321,10 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform
 <header class="hd wrap" id="hd">
   <a class="logo" href="#top" aria-label="The London Extrovert, back to top">The London Extrovert<i aria-hidden="true"></i></a>
   <nav class="nav" aria-label="Main">
-    <a href="#audience">Audience</a>
     <a href="#work">Work</a>
-    <a href="#package">The stay</a>
-    <a class="btn btn-coral" href="#contact" data-mag><span>Invite Ishaq</span> <span class="ar" aria-hidden="true">↗</span></a>
+    <a href="#services">Services</a>
+    <a href="#audience">Audience</a>
+    <a class="btn btn-coral" href="#contact" data-mag><span>Work with Ishaq</span> <span class="ar" aria-hidden="true">↗</span></a>
   </nav>
 </header>
 
@@ -319,18 +333,18 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform
 <!-- HERO -->
 <section class="hero wrap" id="top">
   <div class="hero-top cap">
-    <span class="kick" data-fade>A partnership proposal for Maldives resorts</span>
-    <span class="route" data-fade aria-label="London to Malé">LON <i aria-hidden="true"></i> MLE</span>
+    <span class="kick" data-fade>Travel &amp; lifestyle creator · London</span>
+    <a class="route" href="#contact" data-fade aria-label="Available for international campaigns">LON <i aria-hidden="true"></i> Anywhere</a>
   </div>
   <h1 class="disp h1" data-h1>
-    <span class="ln"><span>Your island,</span></span>
-    <span class="ln l2"><span>seen by <em>Europe.</em></span></span>
+    <span class="ln"><span>Give them</span></span>
+    <span class="ln l2"><span>a reason to <em>go.</em></span></span>
   </h1>
   <div class="hero-grid">
     <div>
-      <p class="lead" data-fade>Muhammad Ishaq turns hosted stays into travel reels watched by <b>3.7M people</b> every 90 days, most of them in the UK and Europe.</p>
+      <p class="lead" data-fade>Muhammad Ishaq makes destination guides, hotel stays and brand campaigns that reach <b>3.7M people</b> every 90 days, mostly across the UK and Europe.</p>
       <div class="ctas" data-fade>
-        <a class="btn btn-coral" href="#contact" data-mag><span>Invite Ishaq</span> <span class="ar" aria-hidden="true">↗</span></a>
+        <a class="btn btn-coral" href="#contact" data-mag><span>Work with Ishaq</span> <span class="ar" aria-hidden="true">↗</span></a>
         <a class="btn btn-ghost" href="#work"><span>Watch the reels</span></a>
       </div>
       <div class="mini" data-fade>
@@ -340,7 +354,7 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform
     </div>
     <div class="stage" data-stage>
       <div class="water" aria-hidden="true"><canvas id="w1"></canvas></div>
-      <p class="coords cap" aria-hidden="true">Malé<br>4.17° N · 73.51° E</p>
+      <p class="coords cap" aria-hidden="true">Based in London<br>51.50° N · 0.12° W</p>
       <a class="chip" href="https://www.instagram.com/thelondonextrovert/" target="_blank" rel="noopener">
         <img src="img/p-bench.webp" alt="" width="60" height="60">
         <span>@thelondonextrovert<small>Travel creator · London</small></span>
@@ -362,26 +376,12 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform
   <p class="src cap mute">Instagram Insights · 21 July – 19 October 2026</p>
 </section>
 
-<!-- FLIGHT PATH -->
-<div class="flight wrap" aria-hidden="true">
-  <svg viewBox="0 0 1200 260" id="flight">
-    <path class="f-base" d="M70 210 C 380 20, 820 20, 1130 210"/>
-    <path class="f-draw" id="fpath" d="M70 210 C 380 20, 820 20, 1130 210"/>
-    <circle class="f-dot" cx="70" cy="210" r="7"/>
-    <circle cx="1130" cy="210" r="7" fill="#FF5533"/>
-    <text class="f-lbl" x="70" y="258" text-anchor="start">LON</text>
-    <text class="f-lbl" x="1130" y="258" text-anchor="end">MLE</text>
-    <text class="f-mid" x="600" y="150" text-anchor="middle">one invite away</text>
-    <g id="plane"><path d="M-14 0 L14 0 M4 -10 L10 0 L4 10 M-10 -5 L-6 0 L-10 5" stroke="#08202B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
-  </svg>
-</div>
-
 <!-- WHY -->
 <section class="sec wrap" aria-labelledby="why-h">
-  <h2 class="disp h2" id="why-h" data-split><span class="ln"><span>Your next guests</span></span><span class="ln"><span>are <em>already watching.</em></span></span></h2>
+  <h2 class="disp h2" id="why-h" data-split><span class="ln"><span>Your next customers</span></span><span class="ln"><span>are <em>already watching.</em></span></span></h2>
   <ul class="why">
-    <li data-row><b class="c">48%</b><p>of his audience is in the UK.<small>The UK is the Maldives' third-largest source market in 2026 (Ministry of Tourism figures, June 2026).</small></p></li>
-    <li data-row><b>71%</b><p>are aged 25 to 54.<small>67% women · 33% men · plus the US, Germany and Italy.</small></p></li>
+    <li data-row><b class="c">48%</b><p>of his audience is in the UK.<small>Plus the US, Germany and Italy.</small></p></li>
+    <li data-row><b>71%</b><p>are aged 25 to 54.<small>67% women · 33% men.</small></p></li>
     <li data-row><b>250K</b><p>saves in 90 days.<small>People keep his videos to plan their trips, not just scroll past them.</small></p></li>
   </ul>
 </section>
@@ -396,36 +396,61 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform
   <p class="swipe cap wrap" aria-hidden="true">Swipe <i></i></p>
 </section>
 
+<!-- SERVICES -->
+<section class="sec wrap" id="services" aria-labelledby="svc-h">
+  <h2 class="disp h2" id="svc-h" data-split><span class="ln"><span>What he</span></span><span class="ln"><span><em>makes.</em></span></span></h2>
+  <ol class="svc">
+    <li data-row><span class="cap mute">01</span><b>Destination guides</b><p>Where to go, what to see and what it costs. Made to be saved and planned around.</p><span class="cap tag">Tourism boards · Tour operators</span></li>
+    <li data-row><span class="cap mute">02</span><b>Hotel &amp; resort stays</b><p>The arrival, the room, the food and the experiences that make guests book.</p><span class="cap tag">Hotels · Resorts</span></li>
+    <li data-row><span class="cap mute">03</span><b>Brand campaigns</b><p>Reels and UGC for apps, experiences and products, with usage for your own channels.</p><span class="cap tag">Travel &amp; lifestyle brands</span></li>
+  </ol>
+</section>
+
+<!-- FLIGHT PATH -->
+<div class="flight wrap" aria-hidden="true">
+  <svg viewBox="0 0 1200 260" id="flight">
+    <path class="f-base" d="M70 210 C 380 20, 820 20, 1130 210"/>
+    <path class="f-draw" id="fpath" d="M70 210 C 380 20, 820 20, 1130 210"/>
+    <circle class="f-dot" cx="70" cy="210" r="7"/>
+    <circle cx="1130" cy="210" r="7" fill="#FF5533"/>
+    <text class="f-lbl" x="70" y="258" text-anchor="start">LON</text>
+    <text class="f-lbl" x="1130" y="258" text-anchor="end">YOU</text>
+    <text class="f-mid" x="600" y="150" text-anchor="middle">one brief away</text>
+    <g id="plane"><path d="M-14 0 L14 0 M4 -10 L10 0 L4 10 M-10 -5 L-6 0 L-10 5" stroke="#08202B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </svg>
+</div>
+
 <!-- PACKAGE -->
 <section class="sec wrap" id="package" aria-labelledby="pkg-h">
   <div class="pkg-head">
-    <h2 class="disp h2" id="pkg-h" data-split><span class="ln"><span>One stay.</span></span><span class="ln"><span><em>A season of content.</em></span></span></h2>
+    <h2 class="disp h2" id="pkg-h" data-split><span class="ln"><span>One trip.</span></span><span class="ln"><span><em>A season of content.</em></span></span></h2>
+    <p class="pkg-lead">A typical hotel or destination partnership. Shaped around your brief.</p>
   </div>
   <div class="ticket-wrap">
-    <article class="ticket" id="ticket" aria-label="The island package">
+    <article class="ticket" id="ticket" aria-label="A typical partnership">
       <div class="t-main">
         <div class="t-bar"><span class="logo">The London Extrovert<i aria-hidden="true"></i></span><span class="cap mute">Boarding pass<span class="hide-s"> · Creator class</span></span></div>
         <div class="t-route">
           <div><b>LON</b><p class="cap mute">London</p></div>
           <div class="t-line" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#FF5533" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M15 5l6 7-6 7M5 8l3 4-3 4"/></svg></div>
-          <div class="r"><b>MLE</b><p class="cap mute">Malé</p></div>
+          <div class="r"><b>YOU</b><p class="cap mute">Your destination</p></div>
         </div>
         <dl class="fields">
           <div><dt>Passenger</dt><dd>Muhammad Ishaq</dd></div>
-          <div><dt>Gate</dt><dd>Your resort</dd></div>
-          <div><dt>Seat</dt><dd>Your best villa</dd></div>
+          <div><dt>Gate</dt><dd>Your brand</dd></div>
+          <div><dt>Seat</dt><dd>Your stay</dd></div>
           <div><dt>Dates</dt><dd>You choose</dd></div>
         </dl>
         <div class="gets">
           <div><h3>On @thelondonextrovert</h3><ul><li><b>2</b>Reels</li><li><b>8–12</b>Stories</li><li><b>1</b>Carousel</li></ul></div>
           <div><h3>For your channels</h3><ul><li><b>4–6</b>Vertical films</li><li><b>15–25</b>Edited photos</li><li><b>✓</b>Usage agreed upfront</li></ul></div>
         </div>
-        <p class="fine">A starting point. The final mix is shaped around your stay and your brief.</p>
+        <p class="fine">A starting point. The final mix depends on the trip and your goals.</p>
       </div>
       <div class="t-stub">
-        <div><p class="cap" style="opacity:.7">Destination</p><p class="big">MLE</p></div>
+        <div><p class="cap" style="opacity:.7">Destination</p><p class="big">YOU</p></div>
         <div class="barcode" aria-hidden="true"></div>
-        <a class="btn btn-coral" href="#contact" data-mag><span>Issue the invite</span> <span class="ar" aria-hidden="true">→</span></a>
+        <a class="btn btn-coral" href="#contact" data-mag><span>Plan a trip</span> <span class="ar" aria-hidden="true">→</span></a>
       </div>
     </article>
   </div>
@@ -467,16 +492,16 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform
 <section class="contact" id="contact" aria-labelledby="c-h">
   <div class="water" aria-hidden="true"><canvas id="w2"></canvas></div>
   <div class="c-in wrap">
-    <p class="cap" style="opacity:.75">Maldives partnerships · 2026–27</p>
-    <h2 class="disp c-h" id="c-h" data-split><span class="ln"><span>See you</span></span><span class="ln"><span>in <em>Malé?</em></span></span></h2>
-    <p class="c-lead">Send your resort, the dates that work and the villa you'd love featured. Ishaq replies with a content plan and availability.</p>
-    <a class="c-mail" href="mailto:thelondonextrovert@gmail.com?subject=Maldives%20stay%20invitation&amp;body=Resort%3A%0AProposed%20dates%3A%0AVilla%20%2F%20experience%20to%20feature%3A%0AWhat%20you'd%20like%20filmed%3A%0A">thelondonextrovert@gmail.com</a>
+    <p class="cap" style="opacity:.75">Brands, hotels &amp; tourism boards</p>
+    <h2 class="disp c-h" id="c-h" data-split><span class="ln"><span>Let's go</span></span><span class="ln"><span><em>somewhere.</em></span></span></h2>
+    <p class="c-lead">Tell Ishaq about your destination, stay or product, the dates and what you want the campaign to do. He replies with ideas and availability.</p>
+    <a class="c-mail" href="mailto:thelondonextrovert@gmail.com?subject=Collaboration%20with%20The%20London%20Extrovert&amp;body=Brand%20%2F%20destination%3A%0AProposed%20dates%3A%0ACampaign%20goal%3A%0ABudget%20range%3A%0A">thelondonextrovert@gmail.com</a>
     <div class="c-ctas">
-      <a class="btn btn-light" href="mailto:thelondonextrovert@gmail.com?subject=Maldives%20stay%20invitation&amp;body=Resort%3A%0AProposed%20dates%3A%0AVilla%20%2F%20experience%20to%20feature%3A%0AWhat%20you'd%20like%20filmed%3A%0A" data-mag><span>Send the invite</span> <span class="ar" aria-hidden="true">↗</span></a>
-      <a class="btn btn-line-l" href="https://wa.me/447423557657?text=Hi%20Ishaq%2C%20we're%20a%20resort%20in%20the%20Maldives%20and%20would%20love%20to%20host%20you." target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-light" href="mailto:thelondonextrovert@gmail.com?subject=Collaboration%20with%20The%20London%20Extrovert&amp;body=Brand%20%2F%20destination%3A%0AProposed%20dates%3A%0ACampaign%20goal%3A%0ABudget%20range%3A%0A" data-mag><span>Send a brief</span> <span class="ar" aria-hidden="true">↗</span></a>
+      <a class="btn btn-line-l" href="https://wa.me/447423557657?text=Hi%20Ishaq%2C%20I'd%20like%20to%20talk%20about%20a%20collaboration." target="_blank" rel="noopener">WhatsApp</a>
       <a class="btn btn-line-l" href="https://www.instagram.com/thelondonextrovert/" target="_blank" rel="noopener">Instagram</a>
     </div>
-    <div class="foot cap">
+        <div class="foot cap">
       <span>© 2026 The London Extrovert · London, UK</span>
       <a href="https://thesocialcat.com/profile/thelondonextrovert" target="_blank" rel="noopener noreferrer">Creator profile ↗</a>
       <a href="#top">Back to top ↑</a>
@@ -486,7 +511,7 @@ em,.it{font-family:var(--serif);font-style:italic;font-weight:400;text-transform
 </main>
 
 <div class="dock" id="dock">
-  <a class="btn btn-coral" href="#contact"><span>Invite Ishaq to your resort</span> <span class="ar" aria-hidden="true">↗</span></a>
+  <a class="btn btn-coral" href="#contact"><span>Work with Ishaq</span> <span class="ar" aria-hidden="true">↗</span></a>
   <a class="btn ig" href="https://www.instagram.com/thelondonextrovert/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
 </div>
 
@@ -521,7 +546,7 @@ track.innerHTML=REELS.map(function(r){
   '<div class="phone"><img src="img/'+r.img+'.webp" alt="" loading="lazy" width="260" height="420"><span class="views">'+esc(r.v)+'</span></div>'+
   '<h3>'+esc(r.t)+'</h3><p class="cap">'+esc(r.k)+'</p></a>';
 }).join("")+
-'<div class="card next"><div class="phone"><span class="cap">Reel 09 · coming soon</span><strong>Your resort,<em>next.</em></strong><a class="btn btn-coral" href="#contact"><span>Invite Ishaq</span> <span class="ar" aria-hidden="true">↗</span></a></div><h3>Your island, filmed for Europe</h3><p class="cap">Maldives</p></div>';
+'<div class="card next"><div class="phone"><span class="cap">Reel 09 · your campaign</span><strong>Your brand,<em>next.</em></strong><a class="btn btn-coral" href="#contact"><span>Work with Ishaq</span> <span class="ar" aria-hidden="true">↗</span></a></div><h3>Your destination, stay or product</h3><p class="cap">Now booking</p></div>';
 
 /* Band */
 var band=$("#band"), one=BRANDS.map(function(b){return "<span>"+esc(b)+"</span><i></i>"}).join("");
