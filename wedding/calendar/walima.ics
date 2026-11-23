@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ishaq with Alaiha//Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:walima-ishaq-alaiha-2026@thelondonextrovert.com
+DTSTAMP:20261123T000000Z
+DTSTART:20261225T150000Z
+DTEND:20261225T183000Z
+SUMMARY:Walima · Ishaq with Alaiha
+LOCATION:Serena Events Complex\, Rahim Yar Khan
+DESCRIPTION:Walima of Ishaq with Alaiha. Friday 25 December 2026\, 8:00 PM.\n\nInvitation: https://thelondonextrovert.com/wedding/
+URL:https://thelondonextrovert.com/wedding/
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Walima · Ishaq with Alaiha is tomorrow
+END:VALARM
+END:VEVENT
+END:VCALENDAR

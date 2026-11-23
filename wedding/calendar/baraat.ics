@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ishaq with Alaiha//Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:baraat-ishaq-alaiha-2026@thelondonextrovert.com
+DTSTAMP:20261123T000000Z
+DTSTART:20261223T070000Z
+DTEND:20261223T120000Z
+SUMMARY:Baraat · Ishaq with Alaiha
+LOCATION:Rosa Blanca Country Club (Sea Shell Marquee)\, adjacent to Lake City\, Lahore
+DESCRIPTION:Sehra Bandi 12:00 PM. Arrival of Baraat 1:00 PM.\n\nInvitation: https://thelondonextrovert.com/wedding/
+URL:https://thelondonextrovert.com/wedding/
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Baraat · Ishaq with Alaiha is tomorrow
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ishaq with Alaiha//Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:mehndi-ishaq-alaiha-2026@thelondonextrovert.com
+DTSTAMP:20261123T000000Z
+DTSTART:20261221T140000Z
+DTEND:20261221T180000Z
+SUMMARY:Mehndi · Ishaq with Alaiha
+LOCATION:Fareed House\, Ittehad Garden\, Shahbaz Pur Road\, Rahim Yar Khan
+DESCRIPTION:Mehndi of Ishaq with Alaiha. Monday 21 December 2026\, 7:00 PM.\n\nInvitation: https://thelondonextrovert.com/wedding/
+URL:https://thelondonextrovert.com/wedding/
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Mehndi · Ishaq with Alaiha is tomorrow
+END:VALARM
+END:VEVENT
+END:VCALENDAR
